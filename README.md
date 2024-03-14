@@ -7,6 +7,7 @@ Hi! I'm **Jello Mangune** and this is the documentation for my Node.js Express A
 > Fetch all users record
 
 **Request Method : GET**
+
 `/users`
 
 **Response:**
