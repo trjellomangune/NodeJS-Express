@@ -208,12 +208,6 @@ Status: _200 OK_
 ]
 ```
 
-Status: _404 Not Found_
-
-```
-{"error": "Organization not found."}
-```
-
 Status: _500 Internal Server Error_
 
 ```
@@ -239,6 +233,12 @@ Status: _200 OK_
         "name": "BSIT"
     }
 ]
+```
+
+Status: _404 Not Found_
+
+```
+{"error": "Organization not found."}
 ```
 
 Status: _500 Internal Server Error_
