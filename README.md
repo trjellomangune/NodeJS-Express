@@ -72,7 +72,7 @@ Status: _200 OK_
 Status: _500 Internal Server Error_
 
 ```
-{"error": "Failed to fetch users from the database."}
+{"error": "Failed to fetch user from the database."}
 ```
 
 <br />
@@ -169,4 +169,147 @@ Status: _500 Internal Server Error_
 
 ```
 {"error": "Failed to update user from the database."}
+```
+
+## OrganizationRoute
+
+> Fetch all organizations record
+
+**GET**
+`/organizations`
+
+**Response:**
+
+Status: _200 OK_
+
+```
+[
+    {
+        "id": 1,
+        "name": "BSIT"
+    },
+    {
+        "id": 2,
+        "name": "BSCS"
+    },
+    {
+        "id": 3,
+        "name": "BMMA"
+    }
+]
+```
+
+Status: _500 Internal Server Error_
+
+```
+{"error": "Failed to fetch organizations from the database."}
+```
+
+<br />
+<br />
+
+> Fetch organization record by id
+
+**GET**
+`/organization/{id}`
+
+**Response:**
+
+Status: _200 OK_
+
+```
+[
+    {
+        "id": 1,
+        "name": "BSIT"
+    }
+]
+```
+
+Status: _500 Internal Server Error_
+
+```
+{"error": "Failed to fetch organization from the database."}
+```
+
+<br />
+<br />
+
+> Add new organization
+
+**POST**
+`/organizations`
+
+**Request Body :**
+
+```
+{
+    "name" : "BSN"
+}
+```
+
+**Response:**
+
+Status: _201 Created_
+
+```
+[
+    {
+        "id": 10,
+        "name": "BSN"
+    }
+]
+```
+
+Status: _400 Bad Request_
+
+```
+{"error": "Missing required fields in the request body."}
+```
+
+Status: _500 Internal Server Error_
+
+```
+{"error": "Failed to add organization to the database."}
+```
+
+<br />
+<br />
+
+> Update organization by id
+
+**PUT**
+`/organization/{id}`
+
+**Request Body :**
+
+```
+{
+    "name" : "updated-BSN"
+}
+```
+
+**Response:**
+
+Status: _200 OK_
+
+```
+[
+    {
+        "id": 10,
+        "name": "updated-BSN"
+    }
+]
+```
+
+Status: _400 Bad Request_
+
+```
+{"error": "Missing required fields in the request body."}
+```
+
+Status: _500 Internal Server Error_
+
+```
+{"error": "Failed to update organization from the database."}
 ```
