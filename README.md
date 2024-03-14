@@ -49,7 +49,7 @@ Status: _500 Internal Server Error_
 
 > Fetch user record by id
 
-**Request Method : GET**
+**GET**
 `/user/{id}`
 
 **Response:**
@@ -78,7 +78,7 @@ Status: _500 Internal Server Error_
 
 > Add new user
 
-**Request Method : POST**
+**POST**
 `/users`
 
 **Request Body :**
@@ -125,7 +125,7 @@ Status: _500 Internal Server Error_
 
 > Update user by id
 
-**Request Method : PUT**
+**PUT**
 `/user/{id}`
 
 **Request Body :**
