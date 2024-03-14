@@ -171,6 +171,9 @@ Status: _500 Internal Server Error_
 {"error": "Failed to update user from the database."}
 ```
 
+<br />
+<br />
+
 ## OrganizationRoute
 
 > Fetch all organizations record
