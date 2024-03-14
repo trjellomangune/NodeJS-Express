@@ -10,6 +10,7 @@ Hi! I'm **Jello Mangune** and this is the documentation for my Node.js Express A
 `/users`
 
 **Response:**
+
 Status: _200 OK_
 
 ```
@@ -53,6 +54,7 @@ Status: _500 Internal Server Error_
 `/user/{id}`
 
 **Response:**
+
 Status: _200 OK_
 
 ```
@@ -93,6 +95,7 @@ Status: _500 Internal Server Error_
 ```
 
 **Response:**
+
 Status: _201 Created_
 
 ```
@@ -140,6 +143,7 @@ Status: _500 Internal Server Error_
 ```
 
 **Response:**
+
 Status: _200 OK_
 
 ```
